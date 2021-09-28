@@ -48,7 +48,7 @@ namespace Decorator_lab
     abstract class BaseDecorator : PizzaFilling
     {
         public PizzaFilling pizza { get; set; }
-        public BaseDecorator(string name, double price) : base(name, price)
+        public BaseDecorator(string name, double price, PizzaFilling pizza) : base(name, price)
         {
 
         }
@@ -56,7 +56,7 @@ namespace Decorator_lab
 
     class CheezeDecorator : BaseDecorator
     {
-        public CheezeDecorator(PizzaFilling pizza) : base(pizza.Name += " Cheeze", pizza.Price += 20)
+        public CheezeDecorator(PizzaFilling pizza) : base(pizza.Name += " Cheeze", pizza.Price += 20, pizza)
         {
 
         }
@@ -69,7 +69,7 @@ namespace Decorator_lab
 
     class PotatoDecorator : BaseDecorator
     {
-        public PotatoDecorator(PizzaFilling pizza) : base(pizza.Name += " Potato", pizza.Price += 10.5)
+        public PotatoDecorator(PizzaFilling pizza) : base(pizza.Name += " Potato", pizza.Price += 10.5, pizza)
         {
 
         }
