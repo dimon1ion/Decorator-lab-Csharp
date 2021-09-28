@@ -28,7 +28,7 @@ namespace Decorator_lab
 
         public override void GetPrice()
         {
-            Console.WriteLine($"Name: {Name} Price: {Price}");
+            Console.WriteLine($"Price: {Price}");
         }
     }
 
@@ -41,7 +41,7 @@ namespace Decorator_lab
 
         public override void GetPrice()
         {
-            Console.WriteLine($"Name: {Name} Price: {Price}");
+            Console.WriteLine($"Price: {Price}");
         }
     }
 
@@ -63,7 +63,7 @@ namespace Decorator_lab
 
         public override void GetPrice()
         {
-            Console.WriteLine($"Name: {Name} Price: {Price}");
+            Console.WriteLine($"Price: {Price}");
         }
     }
 
@@ -76,7 +76,7 @@ namespace Decorator_lab
 
         public override void GetPrice()
         {
-            Console.WriteLine($"Name: {Name} Price: {Price}");
+            Console.WriteLine($"Price: {Price}");
         }
     }
 }

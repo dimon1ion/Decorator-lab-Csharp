@@ -13,6 +13,7 @@ namespace Decorator_lab
             PizzaFilling italia = new ItaliaPizza("Italiya", 2.56);
             italia = new CheezeDecorator(italia);
             italia = new PotatoDecorator(italia);
+            Console.Write($"Name:{italia.Name}\t");
             italia.GetPrice();
         }
     }
