@@ -32,6 +32,19 @@ namespace Decorator_lab
         }
     }
 
+    class BasePizza : PizzaFilling
+    {
+        public BasePizza(string name, double price) : base(name, price)
+        {
+
+        }
+
+        public override void GetPrice()
+        {
+            Console.WriteLine($"Name: {Name} Price: {Price}");
+        }
+    }
+
     abstract class BaseDecorator : PizzaFilling
     {
         public PizzaFilling pizza { get; set; }
